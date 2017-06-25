@@ -11,6 +11,24 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages/main/main', ['page' => 'main']);
+});
+
+// Change language
+Route::get('language/{language}', 'Localization\LanguageController@changeLanguage');
+
+
+
+// Page's routes
+Route::get('/about', function () {
+    return view('pages/about/about', ['page' => 'about']);
+});
+Route::get('/contact', function () {
+    return view('pages/contact/contact', ['page' => 'contact']);
+});
+Route::get('/rehabilitation', function () {
+    return view('pages/rehabilitation/rehabilitation', ['page' => 'rehabilitation']);
 });

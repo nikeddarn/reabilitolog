@@ -1,0 +1,160 @@
+/*!
+ * Start Bootstrap - Modern Business (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 100px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+/*increased navbar height*/
+.navbar {
+    min-height: 100px;
+}
+
+.navbar-brand {
+    padding: 0 15px;
+    height: 100px;
+    line-height: 80px;
+}
+
+.navbar-toggle {
+    /* (80px - высота кнопки 34px) / 2 = 23px */
+    margin-top: 33px;
+    padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        /* (80px - line-height 27px) / 2 = 26.5px */
+        padding-top: 36.5px;
+        padding-bottom: 36.5px;
+        line-height: 27px;
+    }
+}
+
+/*split navbar header*/
+.navbar-header-row {
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
+
+/*Language picker*/
+
+#language-picker {
+    width: 110px;
+}
+
+.icon-small {
+    height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-medium {
+    height: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+/*text indent*/
+p {
+    text-indent: 30px;
+}
+
+/*vertical margin*/
+.top-buffer {
+    margin-top: 20px;
+}
+
+/*same height of panels*/
+/*#main_marketing  .panel-body {*/
+    /*height: 220px;*/
+/*}*/

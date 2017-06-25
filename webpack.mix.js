@@ -11,5 +11,11 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.js('resources/assets/js/app.js', 'public/js');
+mix.sass('resources/assets/sass/app.scss', 'public/css');
+
+mix.copy('resources/assets/css/reabilitolog.css', 'public/css/reabilitolog.css');
+
+mix.copyDirectory('resources/assets/font-awesome', 'public/font-awesome');
+
+mix.disableNotifications();
