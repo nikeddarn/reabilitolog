@@ -26,7 +26,7 @@
     </div>
 
     <!-- Contact Form -->
-    @include('pages/contact/parts/form')
+    {{--@include('pages/contact/parts/form')--}}
 
     <hr>
 
@@ -35,9 +35,9 @@
 @section('scripts')
     <script>
         function initMap() {
-            const coordinates = {lat: 50.50730, lng: 30.60770};
+            const coordinates = {lat: 50.443325, lng: 30.522957};
             let map = new google.maps.Map(document.getElementById('contact-map'), {
-                zoom: 13,
+                zoom: 14,
                 center: coordinates
             });
             let marker = new google.maps.Marker({

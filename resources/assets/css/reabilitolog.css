@@ -145,7 +145,7 @@ footer {
 }
 
 /*text indent*/
-p {
+.text-indent {
     text-indent: 30px;
 }
 
@@ -154,7 +154,12 @@ p {
     margin-top: 20px;
 }
 
+/* full width*/
+.full-width {
+    width: 100%;
+}
+
 /*same height of panels*/
 /*#main_marketing  .panel-body {*/
-    /*height: 220px;*/
+/*height: 220px;*/
 /*}*/

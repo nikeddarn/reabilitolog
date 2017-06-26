@@ -6,17 +6,17 @@
     @include('pages/main/parts/marketing')
 
     <!-- Portfolio Section -->
-    @include('pages/main/parts/portfolio')
+{{--    @include('pages/main/parts/portfolio')--}}
 
     <!-- Features Section -->
     @include('pages/main/parts/features')
 
-    <hr>
+    {{--<hr>--}}
 
     <!-- Call to Action Section -->
-    @include('pages/main/parts/action')
+{{--    @include('pages/main/parts/action')--}}
 
-    <hr>
+    {{--<hr>--}}
 
 @endsection
 

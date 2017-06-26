@@ -1,21 +1,21 @@
 <div class="row">
     <div class="col-lg-12">
-        <h2 class="page-header">Modern Business Features</h2>
+        <h2 class="page-header">Наши преимущества</h2>
     </div>
     <div class="col-md-6">
-        <p>The Modern Business template by Start Bootstrap includes:</p>
+        <p>Наши услуги включают в себя:</p>
         <ul>
-            <li><strong>Bootstrap v3.3.7</strong>
+            <li><strong>Массаж в клинике и на дому</strong>
             </li>
-            <li>jQuery v1.11.1</li>
-            <li>Font Awesome v4.2.0</li>
-            <li>Working PHP contact form with validation</li>
-            <li>Unstyled page elements for easy customization</li>
-            <li>17 HTML pages</li>
+            <li>Консультативное сопровождение</li>
+            <li>Опыт работы более 7 лет</li>
+            <li>Гибкий график работы</li>
+            <li>Индивидуальный подход</li>
+            <li>Конкурентные цены</li>
         </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+        <p  class="text-indent">Если Вы давно (больше года) не проходили курс лечебного массажа, то рекомендую вам пройти этот курс, и в дальнейшем раз в год повторять его.</p>
     </div>
     <div class="col-md-6">
-        <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+        <img class="img-responsive" src="/images/main_features.jpg" alt="Массаж в клинике и на дому">
     </div>
 </div>

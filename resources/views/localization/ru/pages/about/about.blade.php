@@ -20,11 +20,14 @@
         <!-- Intro Content -->
         @include('pages/about/parts/intro')
 
+    <!-- Diploma -->
+    @include('pages/about/parts/diploma')
+
         <!-- Team Members -->
-        @include('pages/about/parts/team')
+{{--        @include('pages/about/parts/team')--}}
 
         <!-- Our Customers -->
-        @include('pages/about/parts/customers')
+{{--        @include('pages/about/parts/customers')--}}
 
         <hr>
 

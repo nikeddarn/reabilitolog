@@ -14,44 +14,44 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item active">
-            <div class="fill" style="background-image:url('/images/carousel/slide1.jpg');"></div>
+            <div class="fill" style="background-image:url('/images/carousel/s1.jpg');"></div>
             <div class="carousel-caption">
                 <h2></h2>
             </div>
         </div>
         <div class="item">
-            <div class="fill" style="background-image:url('/images/carousel/slide2.jpg');"></div>
+            <div class="fill" style="background-image:url('/images/carousel/s2.jpg');"></div>
             <div class="carousel-caption">
                 <h2></h2>
             </div>
         </div>
         <div class="item">
-            <div class="fill" style="background-image:url('/images/carousel/slide3.jpg');"></div>
+            <div class="fill" style="background-image:url('/images/carousel/s3.jpg');"></div>
             <div class="carousel-caption">
                 <h2></h2>
             </div>
         </div><div class="item">
-            <div class="fill" style="background-image:url('/images/carousel/slide4.jpg');"></div>
+            <div class="fill" style="background-image:url('/images/carousel/s4.jpg');"></div>
             <div class="carousel-caption">
                 <h2></h2>
             </div>
         </div><div class="item">
-            <div class="fill" style="background-image:url('/images/carousel/slide5.jpg');"></div>
-            <div class="carousel-caption">
-                <h2>Caption 3</h2>
-            </div>
-        </div><div class="item">
-            <div class="fill" style="background-image:url('/images/carousel/slide6.jpg');"></div>
+            <div class="fill" style="background-image:url('/images/carousel/s5.jpg');"></div>
             <div class="carousel-caption">
                 <h2></h2>
             </div>
         </div><div class="item">
-            <div class="fill" style="background-image:url('/images/carousel/slide7.jpg');"></div>
+            <div class="fill" style="background-image:url('/images/carousel/s6.jpg');"></div>
             <div class="carousel-caption">
                 <h2></h2>
             </div>
         </div><div class="item">
-            <div class="fill" style="background-image:url('/images/carousel/slide8.jpg');"></div>
+            <div class="fill" style="background-image:url('/images/carousel/s7.jpg');"></div>
+            <div class="carousel-caption">
+                <h2></h2>
+            </div>
+        </div><div class="item">
+            <div class="fill" style="background-image:url('/images/carousel/s8.jpg');"></div>
             <div class="carousel-caption">
                 <h2></h2>
             </div>
