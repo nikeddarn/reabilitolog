@@ -25,8 +25,8 @@ class LanguageController extends Controller
      * @param string $locale
      */
     private function setFileFinder(string $locale){
-        $viewPath = resource_path() . '/views';
-        $localViewPath = $viewPath . '/localization/' . $locale;
+        $viewPath = resource_path() . '/views/';
+        $localViewPath = $viewPath . $locale;
 
         $finder = new FileViewFinder(app()['files'], [$localViewPath, $viewPath]);
 

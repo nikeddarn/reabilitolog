@@ -56,12 +56,12 @@ class SetLocale
      */
     private function setFileFinder(string $locale){
 
-        $viewPath = resource_path() . '/views';
+        $viewPath = resource_path() . '/views/';
 
-        $localViewPath = $viewPath . '/localization/' . $locale;
+        $localViewPath = $viewPath . $locale;
 
         if (!is_dir($localViewPath)){
-            $localViewPath = $viewPath . '/localization/' . config('app.fallback_locale');
+            $localViewPath = $viewPath . config('app.fallback_locale');
         }
 
         $finder = new FileViewFinder(app()['files'], [$localViewPath, $viewPath]);

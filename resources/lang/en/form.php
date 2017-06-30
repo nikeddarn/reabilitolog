@@ -1,7 +1,5 @@
 <?php
 
-use App\Contracts\Channels\Auth\AuthenticationChannelsInterface as channels;
-
 /*
   |--------------------------------------------------------------------------
   | Auth Form Fields Lines

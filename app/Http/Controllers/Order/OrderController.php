@@ -4,8 +4,10 @@ namespace App\Http\Controllers\Order;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\View\View;
 use App\Models\Order;
+use App\Mail\NewOrderReceived;
 
 class OrderController extends Controller
 {
@@ -20,9 +22,9 @@ class OrderController extends Controller
     {
         $this->validate($request, $this->validationRules());
 
-        $this->storeOrder($request);
+        $order = $this->storeOrder($request);
 
-        $this->notify($request);
+        $this->notify($order);
 
         return redirect($this->successPath());
     }
@@ -38,16 +40,25 @@ class OrderController extends Controller
     }
 
     /**
+     * Store new order in DB.
+     *
      * @param Request $request
+     * @return Order
      */
     private function storeOrder(Request $request)
     {
-        Order::create($request->only(['name', 'phone', 'message']));
+        return Order::create($request->only(['name', 'phone', 'message']));
     }
 
-    private function notify(Request $request)
+    /**
+     * Send email to admin of massages.
+     *
+     * @param Order $order
+     * @return void
+     */
+    private function notify(Order $order)
     {
-
+        Mail::to(config('order.notification.to'))->send(new NewOrderReceived($order));
     }
 
     /**

@@ -27,6 +27,6 @@ class OrderFormController extends Controller
      */
     private function viewParameters()
     {
-        return ['form' => trans('form.order'), 'page' => 'order'];
+        return ['form' => trans('form.order')];
     }
 }

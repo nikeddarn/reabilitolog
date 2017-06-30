@@ -18,7 +18,7 @@ class CreateOrdersTable extends Migration
             $table->increments('id');
             $table->string('name', 32);
             $table->string('phone', 32);
-            $table->string('message', 255);
+            $table->string('message', 255)->nullable();
             $table->timestamps();
         });
     }
