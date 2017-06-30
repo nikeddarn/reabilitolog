@@ -29,7 +29,18 @@
                     <a href="/rehabilitation">Реабилитация</a>
                 </li>
                 <li>
-                    <a href="/massage">Массаж</a>
+                    <a href="/massage/common" class="dropdown-toggle" data-toggle="dropdown">Массаж<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/massage/common">Общий массаж</a>
+                        </li>
+                        <li>
+                            <a href="/massage/back">Лечебный массаж спины</a>
+                        </li>
+                        <li>
+                            <a href="/massage/insult">массаж после инсульта</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="/price">Цены</a>

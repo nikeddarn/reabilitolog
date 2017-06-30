@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Обо мне
-                    <small>Моя работа</small>
+                    <small>Как я стал реабилитологом</small>
                 </h1>
 
                 <!-- Page Heading/Breadcrumbs -->
