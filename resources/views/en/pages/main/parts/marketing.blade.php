@@ -1,39 +1,37 @@
-<div class="row">
+<div id="main_marketing" class="row">
     <div class="col-lg-12">
-        <h1 class="page-header">
-            Welcome to Modern Business
-        </h1>
+        <h1 class="page-header">Массаж в клинике и на дому</h1>
     </div>
     <div class="col-md-4">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.3.7</h4>
+                <h4><i class="fa fa-fw fa-check"></i> Общий массаж</h4>
             </div>
             <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                <a href="#" class="btn btn-default">Learn More</a>
+                <p class="text-indent">Массаж всего тела, как правило, сюда входит массаж спины, рук и ног. Польза от общего лечебно-профилактического массажа состоит в трех одновременно оказываемых воздействиях: механическом, нейро-рефлекторном, гуморальном.</p>
+                <a href="/massage/common" class="btn btn-primary">Узнать больше</a>
             </div>
         </div>
     </div>
     <div class="col-md-4">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
+                <h4><i class="fa fa-fw fa-check"></i> Лечебный массаж спины</h4>
             </div>
             <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                <a href="#" class="btn btn-default">Learn More</a>
+                <p class="text-indent">Регулярный, раз в год (можно чаще) курс массажа спины, каждодневная гимнастика, отслеживание и корректирование своей осанки (привычной позы) – вот простейшие способы, которыми вы избежите проблем и будете жить долго и счастливо.</p>
+                <a href="/massage/back" class="btn btn-primary">Узнать больше</a>
             </div>
         </div>
     </div>
     <div class="col-md-4">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
+                <h4><i class="fa fa-fw fa-check"></i> Массаж после инсульта</h4>
             </div>
             <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                <a href="#" class="btn btn-default">Learn More</a>
+                <p class="text-indent">Массаж пораженной конечности усиливает кровообращение, ускоряет восстановление нервных и мышечных волокон, препятствует возникновению контрактур в суставах, заставляет здоровые участки мозга выполнять функции отмерших.</p>
+                <a href="/massage/insult" class="btn btn-primary">Узнать больше</a>
             </div>
         </div>
     </div>

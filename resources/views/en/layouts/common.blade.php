@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <!-- Head section -->
@@ -12,7 +12,15 @@
 @include('menu/jumbotron')
 
 <!-- Page Content -->
+<div class="container">
+
+<!-- Page Content -->
 @yield('content')
+
+<!-- Footer -->
+    @include('footers/common')
+
+</div>
 
 <!-- Scripts -->
 @yield ('scripts')

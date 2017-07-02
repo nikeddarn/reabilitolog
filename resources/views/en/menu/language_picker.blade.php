@@ -1,7 +1,7 @@
     <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
 
-            <a href="/language/en" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="/images/flags/gb.svg" alt="English" class="img-thumbnail icon-small">  <span>Eng</span> <span class="caret"></span></a>
+            <a href="/language/ru" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="/images/flags/ru.svg" alt="Русский" class="img-thumbnail icon-small">  <span>Рус</span> <span class="caret"></span></a>
 
             <ul class="dropdown-menu" role="menu">
 

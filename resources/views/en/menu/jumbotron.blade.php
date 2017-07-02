@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<nav id="jumbotron" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -10,11 +10,11 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
-                <div class="navbar-header-row"><i><b>Service Sentre Festivalniy</b></i></div>
+                <div class="navbar-header-row"><i><b>Здоровье Успех Долголетие</b></i></div>
                 <div class="navbar-header-row">
                     <i class="fa fa-phone"></i>&emsp;
-                    <span class="small">(097) 130-2922</span>&emsp;
-                    <span class="small">(095) 796-5818</span>
+                    <span class="small">(097) 255-63-35</span>&emsp;
+                    <span class="small">(093) 312-53-36</span>
                 </div>
             </a>
         </div>
@@ -26,67 +26,44 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="/about">About</a>
+                    <a href="/rehabilitation">Реабилитация</a>
                 </li>
                 <li>
-                    <a href="services.html">Services</a>
+                    <a href="/massage/common" class="dropdown-toggle" data-toggle="dropdown">Массаж<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/massage/common">Общий массаж</a>
+                        </li>
+                        <li>
+                            <a href="/massage/back">Лечебный массаж спины</a>
+                        </li>
+                        <li>
+                            <a href="/massage/insult">массаж после инсульта</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="/contact">Contact</a>
+                    <a href="/price">Цены</a>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                    <a href="/media" class="dropdown-toggle" data-toggle="dropdown">Медиа<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            <a href="/articles">Статьи</a>
                         </li>
                         <li>
-                            <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            <a href="/books">Книги</a>
                         </li>
                         <li>
-                            <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="portfolio-item.html">Single Portfolio Item</a>
+                            <a href="/music">Музыка</a>
                         </li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="blog-home-1.html">Blog Home 1</a>
-                        </li>
-                        <li>
-                            <a href="blog-home-2.html">Blog Home 2</a>
-                        </li>
-                        <li>
-                            <a href="blog-post.html">Blog Post</a>
-                        </li>
-                    </ul>
+                <li>
+                    <a href="/contact">Контакты</a>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="full-width.html">Full Width Page</a>
-                        </li>
-                        <li>
-                            <a href="sidebar.html">Sidebar Page</a>
-                        </li>
-                        <li>
-                            <a href="faq.html">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="404.html">404</a>
-                        </li>
-                        <li>
-                            <a href="pricing.html">Pricing Table</a>
-                        </li>
-                    </ul>
+                <li>
+                    <a href="/about">О нас</a>
                 </li>
             </ul>
         </div>

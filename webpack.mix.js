@@ -18,4 +18,6 @@ mix.copy('resources/assets/css/reabilitolog.css', 'public/css/reabilitolog.css')
 
 mix.copyDirectory('resources/assets/font-awesome', 'public/font-awesome');
 
+// mix.js('resources/assets/js/reabilitolog.js', 'public/js/reabilitolog.js');
+
 mix.disableNotifications();

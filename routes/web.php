@@ -46,14 +46,17 @@ Route::get('/price', function () {
 Route::get('/articles', function () {
     return view('pages/articles/articles');
 });
-Route::get('articles/resources', function () {
+Route::get('/articles/resources', function () {
     return view('articles/pages/resources');
 });
-Route::get('articles/rest', function () {
+Route::get('/articles/rest', function () {
     return view('articles/pages/rest');
 });
-Route::get('articles/auto_massage', function () {
+Route::get('/articles/auto_massage', function () {
     return view('articles/pages/auto_massage');
+});
+Route::get('/articles/osteochondrosis', function () {
+    return view('articles/pages/osteochondrosis');
 });
 Route::get('/books', function () {
     return view('media/books');

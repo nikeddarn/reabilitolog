@@ -1,32 +1,23 @@
-@extends('layouts/common')
+@extends('layouts/common_top_carousel')
 
 @section('content')
-    <!-- Header Carousel -->
-    @include('carousels/header_carousel')
 
-    <!-- Page Content -->
-    <div class="container">
+    <!-- Marketing Icons Section -->
+    @include('pages/main/parts/marketing')
 
-        <!-- Marketing Icons Section -->
-        @include('pages/main/parts/marketing')
+    <!-- Portfolio Section -->
+    {{--    @include('pages/main/parts/portfolio')--}}
 
-        <!-- Portfolio Section -->
-        @include('pages/main/parts/portfolio')
+    <!-- Features Section -->
+    @include('pages/main/parts/features')
 
-        <!-- Features Section -->
-        @include('pages/main/parts/features')
+    <hr>
 
-        <hr>
+    <!-- Call to Action Section -->
+    @include('pages/main/parts/action')
 
-        <!-- Call to Action Section -->
-        @include('pages/main/parts/action')
+    <hr>
 
-        <hr>
-
-        <!-- Footer -->
-        @include('footers/common')
-
-    </div>
 @endsection
 
 @section('scripts')
@@ -36,4 +27,12 @@
             interval: 5000 //changes the speed
         })
     </script>
+@endsection
+
+@section('description')
+    <meta name="description" content="{{ trans('meta.description.main') }}">
+@endsection
+
+@section('title')
+    <title>{{ trans('meta.title.main') }}</title>
 @endsection
