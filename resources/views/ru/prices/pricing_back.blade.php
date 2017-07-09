@@ -1,6 +1,6 @@
 <div class="panel panel-primary text-center">
     <div class="panel-heading">
-        <h3 class="panel-title">Общий массаж <span class="label label-success">Рекомендую</span></h3>
+        <h3 class="panel-title">Лечебный массаж спины <span class="label label-success">Рекомендую</span></h3>
     </div>
     <div class="panel-body">
         <span class="price"><sup>грн</sup>&nbsp;250<sup>00</sup></span>

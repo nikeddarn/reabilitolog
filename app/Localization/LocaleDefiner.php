@@ -19,10 +19,18 @@ class LocaleDefiner implements LocaleDefinerInterface
      */
     public function getLocale(Request $request)
     {
-        $preferredLocales =  $this->defineLocale($request);
+        $preferredLocales = $this->defineLocales($request);
+
         $intersectedLocales = array_intersect($preferredLocales, config('app.available_locales'));
 
-        return $intersectedLocales ? $intersectedLocales[0] : config('app.fallback_locale');
+        if (!empty($intersectedLocales)) {
+            do {
+                $locale = array_shift($intersectedLocales);
+            } while (!$locale);
+            return $locale;
+        } else {
+            return config('app.fallback_locale');
+        }
     }
 
 
@@ -32,7 +40,7 @@ class LocaleDefiner implements LocaleDefinerInterface
      * @param Request $request
      * @return array
      */
-    private function defineLocale(Request $request)
+    private function defineLocales(Request $request)
     {
         $locales = $this->defineLocalesByHeader($request);
         $storedLocale = $this->getStoredLocale($request);
@@ -73,10 +81,10 @@ class LocaleDefiner implements LocaleDefinerInterface
 
         $header = $this->getHeader($request);
 
-        if ($header && preg_match_all('/([a-z]{2}(?:-[A-Z]{2}){0,1})(?:;q=(0.[1-9])){0,1}/', $header, $matches, PREG_PATTERN_ORDER)) {
+        if (is_string($header) && preg_match_all('/([a-z]{2}(?:-[A-Z]{2}){0,1})(?:;q=(0.[1-9])){0,1}/', $header, $matches, PREG_PATTERN_ORDER)) {
             $locales = array_combine($matches[1], $matches[2]);
             array_walk($locales, function (&$rate) {
-                if (!$rate){
+                if (!$rate) {
                     $rate = 1;
                 }
             });
@@ -85,6 +93,7 @@ class LocaleDefiner implements LocaleDefinerInterface
             array_walk($locales, function (&$locale) {
                 $locale = strtolower(substr($locale, 0, 2));
             });
+            $locales = array_unique($locales);
         }
 
         return $locales;
@@ -97,6 +106,13 @@ class LocaleDefiner implements LocaleDefinerInterface
      */
     private function getHeader(Request $request)
     {
-        return filter_var(substr($request->header('Accept-Language'), 0, 64), FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH);
+        $acceptLanguageHeader = $request->header('Accept-Language');
+
+        if ($acceptLanguageHeader) {
+            return filter_var(substr($acceptLanguageHeader, 0, 64), FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH);
+        } else {
+            return null;
+        }
+
     }
 }

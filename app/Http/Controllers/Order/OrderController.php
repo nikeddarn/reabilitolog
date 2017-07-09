@@ -12,17 +12,37 @@ use App\Mail\NewOrderReceived;
 class OrderController extends Controller
 {
     /**
-     * Handle incoming order request
-     *
-     * @param Request $request
-     *
-     * @return View
+     * @var Request
      */
-    public function order(Request $request)
-    {
-        $this->validate($request, $this->validationRules());
+    private $request;
+    /**
+     * @var Order
+     */
+    private $order;
 
-        $order = $this->storeOrder($request);
+    /**
+     * OrderController constructor.
+     * @param Request $request
+     * @param Order $order
+     */
+    public function __construct(Request $request, Order $order){
+
+        $this->request = $request;
+        $this->order = $order;
+    }
+
+    /**
+     * Handle incoming order request
+     * @return View
+     * @internal param Request $request
+     *
+     * @internal param Order $order
+     */
+    public function order()
+    {
+        $this->validate($this->request, $this->validationRules());
+
+        $order = $this->storeOrder();
 
         $this->notify($order);
 
@@ -42,12 +62,11 @@ class OrderController extends Controller
     /**
      * Store new order in DB.
      *
-     * @param Request $request
      * @return Order
      */
-    private function storeOrder(Request $request)
+    private function storeOrder()
     {
-        return Order::create($request->only(['name', 'phone', 'message']));
+        return $this->order->create($this->request->only(['name', 'phone', 'message']));
     }
 
     /**
